@@ -11,3 +11,32 @@
 //THEN the text for that event is saved in local storage
 //WHEN I refresh the page
 //THEN the saved events persist
+
+
+
+//curent date and time
+const m = moment();
+const myMomentDiv = document.getElementById("displayMoment")
+
+displayMoment.textContent=m
+
+console.log(m.format("LLLL"));
+
+//change colors depending on time
+var timeEl = document.querySelector(".hour")
+const hour = parseInt(m.format("HH"));
+
+if (hour > 9) {
+    $(.time-block).addClass('future');
+} else if(hour >= 9) {
+    
+}
+
+//save user input to local storage
+$('.saveBtn').click(function() {
+    var str = $(this).siblings('.description').val();
+
+    localStorage.setItem("input.description", str);
+
+}
+)
