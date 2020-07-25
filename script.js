@@ -23,14 +23,10 @@ displayMoment.textContent=m
 console.log(m.format("LLLL"));
 
 //change colors depending on time
-var timeEl = document.querySelector(".hour")
-const hour = parseInt(m.format("HH"));
+const timeEl = $(".hour");
+timeEl.each((div => console.log($(this))));
 
-if (hour > 9) {
-    $(.time-block).addClass('future');
-} else if(hour >= 9) {
-    
-}
+
 
 //save user input to local storage
 $('.saveBtn').click(function() {
@@ -40,3 +36,10 @@ $('.saveBtn').click(function() {
 
 }
 )
+
+
+//if (hour > 9) {
+   // $(.time-block).addClass('future');
+//} else if(hour >= 9) {
+    
+//}
