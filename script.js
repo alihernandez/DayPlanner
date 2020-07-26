@@ -28,10 +28,15 @@ var day = new Date();
 var hrs = day.getHours() ;
 console.log(hrs)
 
+
+const timeEl= $(".id");
+timeEl.each($(id => console.log(id)));
+console.log($("<.id>"))
+
  //update block
- $( "div" ).addClass( "present" );
- var block = $("<input>");
- console.log(block);
+ //$( "#id.atrr" ).addClass( "present" );
+ //var block = $("<input>");
+ //console.log(block);
 
      
 
