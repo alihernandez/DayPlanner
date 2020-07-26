@@ -24,8 +24,45 @@ console.log(m.format("LLLL"));
 
 //color code time blocks
 
-const timeEl= $(".hour");
-timeEl.each((div => console.log(div)))
+var day = new Date();
+var hrs = day.getHours() ;
+console.log(hrs)
+
+ //update block
+ $( "div" ).addClass( "present" );
+ var block = $("<input>");
+ console.log(block);
+
+     
+
+
+
+//const rows = document.getElementsByClassName("row");
+//let currentHour = parseInt(moment().format('H'));
+
+//Array.from(rows).forEach( row => {
+    //let
+        //rowIdString= row.id,
+        //rowHour;
+        //if (rowIdString) {
+            //rowHour = parseInt(rowIdString);
+        //}
+        //if (rowHour) {
+            //if (currentHour === rowHour) {
+               // setClass("#present");
+            //} else if ((currentHour < rowHour) && (currentHour > rowHour - 6)) {
+                //setClass("#future");
+            //} else if ((currentHour > rowHour) && (currentHour < rowHour + 6)) {
+                //setClass("#past");
+            //} else {
+
+            //}
+
+        //}
+//});
+
+//const timeEl= $(".hour");
+//timeEl.each((div => console.log(div)))
 
 //console.log(timeEl)
 
@@ -43,6 +80,13 @@ timeEl.each((div => console.log(div)))
         //$(this).removeClass("present");
     //}
 //};
+
+
+//if (hour > 9) {
+   // $(.time-block).addClass('future');
+//} else if(hour >= 9) {
+    
+//}
 
 
 
@@ -100,11 +144,3 @@ $("#2PM").children("input").val(localStorage.getItem("2PM"));
 $("#3PM").children("input").val(localStorage.getItem("3PM"));
 $("#4PM").children("input").val(localStorage.getItem("4PM"));
 $("#5PM").children("input").val(localStorage.getItem("5PM"));
-
-
-
-//if (hour > 9) {
-   // $(.time-block).addClass('future');
-//} else if(hour >= 9) {
-    
-//}
