@@ -12,18 +12,50 @@
 //WHEN I refresh the page
 //THEN the saved events persist
 
-//render items 
-//let toDo = JSON.parse(localStorage.getItem('items')) || [];
 
-//const renderItems = (items) => {
 
 //curent date and time
 const m = moment();
 const myMomentDiv = document.getElementById("displayMoment")
 
-displayMoment.textContent=m
+displayMoment.textContent=m.format("LLLL")
 
 console.log(m.format("LLLL"));
+
+//color code time blocks
+
+const timeEl= $(".hour");
+timeEl.each((div => console.log(div)))
+
+//console.log(timeEl)
+
+
+//function updateBlocks(){
+    //var hr =  
+   // if( m > hr ) {
+    //    $(this).addClass("past");
+    //} else if (hr === m) {
+    //    $(this).removeClass("past");
+    //    $(this).addClass("present");
+    //} else if (hr < m) {
+       // $(this).addClass("future");
+        //$(this).removeClass("past");
+        //$(this).removeClass("present");
+    //}
+//};
+
+
+
+
+//save to local storage
+$(".saveBtn").on("click", function() {
+    var timeOfDay= $(this).parent().attr("id");
+    //need to use (this).sibilings to refer to the item in the DOM that is calling it
+    var textContent= $(this).siblings("input").val().trim();
+
+    localStorage.setItem(timeOfDay, textContent);
+    console.log(timeOfDay, textContent);
+})
 
 //this first part i worked through during office hours but i just felt it was too much and didn't really understand why 
 //if(localStorage.getItem("input") !== null) {
@@ -41,22 +73,6 @@ console.log(m.format("LLLL"));
     //}
 //}
 //;
-
-//save to local storage
-$(".saveBtn").on("click", function() {
-    var timeOfDay= $(this).parent().attr("id");
-    var textContent= $("input").val().trim();
-
-    localStorage.setItem(timeOfDay, textContent);
-    console.log(timeOfDay, textContent);
-})
-
-
-//change colors depending on time
-//const timeEl = $(".hour");
-//timeEl.each((div => console.log($(this))));
-
-
 
 //save user input to local storage
 

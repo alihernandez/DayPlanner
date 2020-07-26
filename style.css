@@ -1,7 +1,8 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: '2pak';
   font-size: 16px;
   line-height: 1;
+  background-color: bisque;
 }
 
 textarea{
@@ -23,23 +24,38 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+  
+  border-style: groove;
+  border-width: thick;
+  border-color: indianred;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
+  border-style: groove;
+  border-width: thick;
+  border-color: indianred;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
+  border-radius: 15px;
+  border-style: groove;
+  border-width: thick;
+  border-color: indianred;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color:bisque;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 15px;
+  
+  
 }
 
 .past {
