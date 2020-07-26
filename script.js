@@ -27,6 +27,28 @@ console.log(m.format("LLLL"));
 var day = new Date();
 var hrs = day.getHours();
 
+var inputEls = $(".description");
+
+
+//target and loop through each input element
+$(".description").each(function(index, element){
+    //console.log(element.id);
+    //console.log(hrs);
+//convert element.id from string to integer and compare to hrs
+//if element.id is equal to hrs add class"present"
+    if(parseInt(element.id) === hrs){
+        $(this).addClass("present");
+        console.log(element.id);
+//if element.id is less than hrs add class "past"
+    } else if (parseInt(element.id) < hrs) {
+        $(this).addClass("past");
+//if element.id is more than hrs add class "future"
+    } else if (parseInt(element.id) > hrs) {
+        $(this).addClass("future");
+    }
+
+});
+
 //if("input#" = hrs){
     //$("input").addClass("present");
 //}
@@ -34,7 +56,7 @@ var hrs = day.getHours();
 
 
 //$("input#" + hrs).addClass("present");
-$("input#" + hrs).addClass("present");
+//$("input#" + hrs).addClass("present");
 //console.log($("input#"))
 
 
@@ -155,7 +177,7 @@ $(".saveBtn").on("click", function() {
 
 
 //pulling user info
-//$("#9AM").children("input").val(localStorage.getItem("9AM"));
+$("#9AM").children("input").val(localStorage.getItem("9AM"));
 $("#10AM").children("input").val(localStorage.getItem("10AM"));
 $("#11AM").children("input").val(localStorage.getItem("11AM"));
 $("#12PM").children("input").val(localStorage.getItem("12PM"));
