@@ -25,13 +25,28 @@ console.log(m.format("LLLL"));
 //color code time blocks
 
 var day = new Date();
-var hrs = day.getHours() ;
-console.log(hrs)
+var hrs = day.getHours();
+
+//if("input#" = hrs){
+    //$("input").addClass("present");
+//}
 
 
-const timeEl= $(".id");
-timeEl.each($(id => console.log(id)));
-console.log($("<.id>"))
+
+//$("input#" + hrs).addClass("present");
+$("input#" + hrs).addClass("present");
+//console.log($("input#"))
+
+
+//$(".description").click(function () {
+    //console.log($(this.attr('#id')));
+  //});
+
+
+
+//const timeEl= $(".id");
+//timeEl.each($(id => console.log(id)));
+//console.log($("<.id>"))
 
  //update block
  //$( "#id.atrr" ).addClass( "present" );
