@@ -2,7 +2,7 @@
 Daily planner for user to plan out day by the hour. Color coded so user has visual if time block is in past, present, or future. User is able to store hourly plans in local storage.
 
 ### Current date and time is shown at top of page
-![](DayPlanner/currentTime.png)
+![]/currentTime.png)
 https://github.com/alihernandez/DayPlanner/issues/2#issue-665890359
 
 ### If time block is in past it is shown as grey
