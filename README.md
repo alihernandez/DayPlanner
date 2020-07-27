@@ -3,6 +3,7 @@ Daily planner for user to plan out day by the hour. Color coded so user has visu
 
 ### Current date and time is shown at top of page
 ![](DayPlanner/currentTime.png)
+https://github.com/alihernandez/DayPlanner/issues/2#issue-665890359
 
 ### If time block is in past it is shown as grey
 ![]()
