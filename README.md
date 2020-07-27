@@ -14,3 +14,4 @@ https://github.com/alihernandez/DayPlanner/issues/5#issue-665891000
 ### If time block is in future it is shown as green
 ![]()
 https://github.com/alihernandez/DayPlanner/issues/4#issue-665890886
+### link to app https://alihernandez.github.io/DayPlanner/
