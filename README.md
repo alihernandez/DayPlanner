@@ -7,9 +7,10 @@ https://github.com/alihernandez/DayPlanner/issues/2#issue-665890359
 
 ### If time block is in past it is shown as grey
 ![]()
-
+https://github.com/alihernandez/DayPlanner/issues/3#issue-665890598
 ### If time block is in present it is shown as red
 ![]()
-
+https://github.com/alihernandez/DayPlanner/issues/5#issue-665891000
 ### If time block is in future it is shown as green
 ![]()
+https://github.com/alihernandez/DayPlanner/issues/4#issue-665890886
